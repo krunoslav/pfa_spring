@@ -8,7 +8,6 @@
 	<bean id="userBl" class="hr.ponge.pfa.service.env.user.UserBLImpl"
 		scope="singleton">
 		<property name="sessionFactory" ref="mySessionFactory" />
-		
-	</bean>
+			</bean>
 
 </beans>

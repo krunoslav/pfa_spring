@@ -16,6 +16,11 @@ import javax.persistence.Table;
 @Table(name="PFA_TENANT")
 public class Tenant extends EntityPfa {
 
+	@Override
+	public String toString() {
+		return "Tenant [id=" + id + ", name=" + name + "]";
+	}
+
 	/**
 	 * 
 	 */

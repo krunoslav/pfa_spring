@@ -32,28 +32,19 @@ public class PfaException extends Exception {
 
 	private String errorCode;
 
-	private List<PfaMessage> messages = new ArrayList<PfaMessage>();
-
 	public PfaException(String errorCode, Throwable cause) {
 		super(cause);
 		this.errorCode = errorCode;
 
 	}
 
-	public PfaException(String errorCode, Throwable cause,
-			List<PfaMessage> messages) {
-		super(cause);
-		this.errorCode = errorCode;
-		this.messages = messages;
-	}
-
-	public PfaException(String errorCode, List<PfaMessage> messages) {
-		this.errorCode = errorCode;
-		this.messages = messages;
-	}
-
 	public PfaException(String errorCode) {
 		this.errorCode = errorCode;
+	}
+
+	@Override
+	public String toString() {
+		return "PfaException [errorCode=" + errorCode + "]";
 	}
 
 	public String getErrorCode() {
@@ -62,14 +53,6 @@ public class PfaException extends Exception {
 
 	public void setErrorCode(String errorCode) {
 		this.errorCode = errorCode;
-	}
-
-	public List<PfaMessage> getMessages() {
-		return messages;
-	}
-
-	public void setMessages(List<PfaMessage> messages) {
-		this.messages = messages;
 	}
 
 }

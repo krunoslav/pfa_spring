@@ -1,6 +1,7 @@
 package hr.ponge.pfa.service.base;
 
 import hr.ponge.pfa.PfaException;
+import hr.ponge.pfa.PfaRollbackException;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -9,7 +10,7 @@ import org.hibernate.SessionFactory;
 import org.springframework.transaction.annotation.Propagation;
 import org.springframework.transaction.annotation.Transactional;
 
-@Transactional(rollbackFor = PfaException.class)
+@Transactional(rollbackFor = {PfaException.class,PfaRollbackException.class})
 public abstract class ServiceBase implements Service {
 
 	private MessageListener messageListener;

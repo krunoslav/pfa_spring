@@ -14,7 +14,7 @@ public class LoggerAopImpl {
 	 * execution.
 	 */
 	public void beforeAdvice() {
-		log.debug("beforeAdvice");
+		
 	}
 
 	/**
@@ -22,14 +22,14 @@ public class LoggerAopImpl {
 	 * execution.
 	 */
 	public void afterAdvice() {
-		log.debug("afterAdvice");
+		
 	}
 
 	/**
 	 * This is the method which I would like to execute when any method returns.
 	 */
 	public void afterReturningAdvice(Object retVal) {
-		log.debug("afterReturningAdvice Returning:" + retVal);
+		
 	}
 
 	/**
@@ -37,18 +37,34 @@ public class LoggerAopImpl {
 	 * raised.
 	 */
 	public void afterThrowingAdvice(Throwable ex) {
+		
 		log.debug("There has been an exception: " + ex.toString());
 	}
 
 	public Object aroundAdvice(ProceedingJoinPoint pjp) throws Throwable {
 		long start = System.currentTimeMillis();
+		String name = null;
+		if (log.isTraceEnabled()) {
+			name = pjp.getTarget().getClass().getCanonicalName() + "."
+					+ pjp.getSignature().getName();
+			log.trace("ENTRY " + name);
+			for (Object arg : pjp.getArgs()) {
+				log.trace("ENTRY ARG:" + arg.toString());
+			}
+		}
 		Object retVal = pjp.proceed();
-		long stop = System.currentTimeMillis();
-		long delta = stop - start;
 
-		log.debug("TIME TO EXECUTE METHOD "
-				+ pjp.getSignature().toShortString() + " ON TARGET "
-				+ pjp.getTarget() + "  TIME:" + delta);
+		if (log.isTraceEnabled()) {
+			long stop = System.currentTimeMillis();
+			long delta = stop - start;
+			log.trace("TIME TO EXECUTE METHOD " + name + "  TIME:" + delta);
+			if (retVal != null) {
+				log.trace("EXIT " + name + "  RETURN VALUE("
+						+ retVal.toString() + ")");
+			} else {
+				log.trace("EXIT " + name);
+			}
+		}
 		return retVal;
 	}
 }

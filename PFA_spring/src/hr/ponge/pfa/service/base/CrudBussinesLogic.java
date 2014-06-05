@@ -1,10 +1,14 @@
 package hr.ponge.pfa.service.base;
 
 import hr.ponge.pfa.PfaException;
+import hr.ponge.pfa.PfaRollbackException;
 import hr.ponge.pfa.model.EntityPfa;
 
 import java.util.Date;
 import java.util.List;
+
+import org.slf4j.ext.XLogger;
+import org.slf4j.ext.XLoggerFactory;
 
 public abstract class CrudBussinesLogic<T extends EntityPfa, E extends EntityFilterOptions>
 		extends ServiceBase implements CrudBussinesLogicIntf<T, E> {
@@ -14,6 +18,9 @@ public abstract class CrudBussinesLogic<T extends EntityPfa, E extends EntityFil
 	public static final int OPERATION_UPDATE = 3;
 	public static final int OPERATION_INSERT = 4;
 	public static final int OPERATION_DELETE = 5;
+	
+	private static final XLogger log = XLoggerFactory
+			.getXLogger(CrudBussinesLogic.class);
 
 	// CREATE
 	/*
@@ -62,12 +69,13 @@ public abstract class CrudBussinesLogic<T extends EntityPfa, E extends EntityFil
 	 * 
 	 * @see hr.ponge.pfa.service.CrudBussinesLogicIntf#saveEntity(T)
 	 */
+	@SuppressWarnings("unchecked")
 	@Override
 	public T saveEntity(T entity) throws PfaException {
 		messages.clear();
 		if (entity.getId() != 0
 				&& !getSessionFactory().getCurrentSession().contains(entity)) {
-			throw new PfaException(PfaException.ENTITY_NOT_IN_CONTEXT);
+		entity=(T) getSessionFactory().getCurrentSession().merge(entity);
 		}
 		if (entity.getId() == 0) {
 			validateEntity(OPERATION_INSERT, entity);
@@ -77,7 +85,7 @@ public abstract class CrudBussinesLogic<T extends EntityPfa, E extends EntityFil
 
 		saveEntityCallback(entity);
 		if (checkForRollbackErrors(messages)) {
-			throw new PfaException(PfaException.VALIDATION_FAILED_ROLLBACK);
+			throw new PfaRollbackException();
 		}
 		entity.setLastChangeDate(new Date());
 		getSessionFactory().getCurrentSession().persist(entity);
@@ -92,6 +100,7 @@ public abstract class CrudBussinesLogic<T extends EntityPfa, E extends EntityFil
 
 	// DELETE
 
+	@SuppressWarnings("unchecked")
 	/*
 	 * (non-Javadoc)
 	 * 
@@ -106,9 +115,12 @@ public abstract class CrudBussinesLogic<T extends EntityPfa, E extends EntityFil
 		}
 
 		if (!getSessionFactory().getCurrentSession().contains(entity)) {
-			throw new PfaException(PfaException.ENTITY_NOT_IN_CONTEXT);
+			entity=(T) getSessionFactory().getCurrentSession().merge(entity);
 		}
 		validateEntity(OPERATION_DELETE, entity);
+		if (checkForRollbackErrors(messages)) {
+			throw new PfaRollbackException();
+		}
 		deleteEntityCallback(entity);
 		getSessionFactory().getCurrentSession().delete(entity);
 		

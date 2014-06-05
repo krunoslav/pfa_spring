@@ -1,109 +1,22 @@
 <configuration  scan="true">
 
-<!--  <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender"> -->
-<!--     <encoder> -->
-<!--       <pattern>%-4relative [%thread] %-5level %logger{35} - %msg %n</pattern> -->
-<!--     </encoder> -->
-<!--   </appender> -->
+ <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+    <encoder>
+      <pattern>%-4relative [%thread] %-5level %logger{35} - %msg %n</pattern>
+    </encoder>
+  </appender>
 
-
-	<appender name="FILE"
-		class="ch.qos.logback.core.rolling.RollingFileAppender">
-		<file>/opt/fec/log/fec-ws.log</file>
-		<rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
-				<!-- hourly rollover -->
-			<fileNamePattern>logFile.%d{yyyy-MM-dd_HH}.log</fileNamePattern>
-
-			<!-- keep 30 days' worth of history -->
-			<!-- <maxHistory>720</maxHistory>  -->
-		</rollingPolicy>
-
-		<filter class="de.mincom.fec.core.util.logging.extension.FecThreadFilter">
-			<threadNameRegx>FEC_Scheduler.*</threadNameRegx>
-			
-			<OnMismatch>NEUTRAL</OnMismatch>
-			<OnMatch>DENY</OnMatch>
-		</filter>
-
-
-		<encoder class="ch.qos.logback.core.encoder.LayoutWrappingEncoder">
-			<layout class="de.mincom.fec.core.util.logging.extension.FecPatternLayout">
-				<tracePattern>%d{HH:mm:ss.SSS} %-5level [%thread][%logger{0}] MDC[ACTOR{%X{ACTOR}} OPERATION{%X{OPERATION}} OBJECT{%X{OPERATION_OBJECT}} DETAILS{%X{ADITIONAL_INFO}}] %method %line - %msg%n</tracePattern>
-				<debugPattern>%d{HH:mm:ss.SSS} %-5level [%thread][%logger{0}] MDC[ACTOR{%X{ACTOR}} OPERATION{%X{OPERATION}} OBJECT{%X{OPERATION_OBJECT}} DETAILS{%X{ADITIONAL_INFO}}] %method %line - %msg%n</debugPattern>
-				<pattern>%d{HH:mm:ss.SSS} %-5level [%thread][%logger{0}] MDC[ACTOR{%X{ACTOR}} OPERATION{%X{OPERATION}} OBJECT{%X{OPERATION_OBJECT}} DETAILS{%X{ADITIONAL_INFO}}] - %msg%n</pattern>
-			</layout>
-			<pattern></pattern>
-		</encoder>
-	</appender>
-
-
-	<appender name="ALARM"
-		class="ch.qos.logback.core.rolling.RollingFileAppender">
-		<file>/opt/fec/log/alarm-fec-ws.log</file>
-		<rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
-				<!-- hourly rollover -->
-			<fileNamePattern>logFile.%d{yyyy-MM-dd_HH}.log</fileNamePattern>
-
-			<!-- keep 30 days' worth of history -->
-			<!-- <maxHistory>720</maxHistory>  -->
-		</rollingPolicy>
-		<filter class="ch.qos.logback.core.filter.EvaluatorFilter">
-			<evaluator class="ch.qos.logback.classic.boolex.OnMarkerEvaluator">
-				<marker>ALARM</marker>
-			</evaluator>
-			<onMismatch>DENY</onMismatch>
-  			<onMatch>NEUTRAL</onMatch>
-		</filter>
-		<encoder>
-			<pattern>%d{HH:mm:ss.SSS} %-5level [%thread][%logger{0}] MDC[ACTOR{%X{ACTOR}} OPERATION{%X{OPERATION}} OBJECT{%X{OPERATION_OBJECT}} DETAILS{%X{ADITIONAL_INFO}}] - %msg%n
-			</pattern>
-		</encoder>
-
-	</appender>
-	
-	
-	<appender name="SCHEDULER"
-		class="ch.qos.logback.core.rolling.RollingFileAppender">
-		<file>/opt/fec/log/fec-scheduler.log</file>
-		<rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
-			<!-- hourly rollover -->
-			<fileNamePattern>logFile.%d{yyyy-MM-dd_HH}.log</fileNamePattern>
-
-			<!-- keep 30 days' worth of history -->
-			<!-- <maxHistory>720</maxHistory>  -->
-		</rollingPolicy>
-
-		<filter class="de.mincom.fec.core.util.logging.extension.FecThreadFilter">
-			<threadNameRegx>FEC_Scheduler.*</threadNameRegx>
-			
-			<OnMismatch>DENY</OnMismatch>
-			<OnMatch>NEUTRAL</OnMatch>
-		</filter>
-
-
-		<encoder class="ch.qos.logback.core.encoder.LayoutWrappingEncoder">
-			<layout class="de.mincom.fec.core.util.logging.extension.FecPatternLayout">
-				<tracePattern>%d{HH:mm:ss.SSS} %-5level [%thread][%logger{0}] MDC[ACTOR=%X{ACTOR} OPERATION=%X{OPERATION} OBJECT=%X{OPERATION_OBJECT} DETAILS=%X{ADITIONAL_INFO}] %method %line - %msg%n</tracePattern>
-				<debugPattern>%d{HH:mm:ss.SSS} %-5level [%thread][%logger{0}] MDC[ACTOR=%X{ACTOR} OPERATION=%X{OPERATION} OBJECT=%X{OPERATION_OBJECT} DETAILS=%X{ADITIONAL_INFO}] - %msg%n</debugPattern>
-				<pattern>%d{HH:mm:ss.SSS} %-5level [%thread][%logger{0}] MDC[ACTOR=%X{ACTOR} OPERATION=%X{OPERATION} OBJECT=%X{OPERATION_OBJECT} DETAILS=%X{ADITIONAL_INFO}] - %msg%n</pattern>
-			</layout>
-			<pattern></pattern>
-		</encoder>
-	</appender>
 
 	<!-- ================ -->
 	<!-- Limit categories -->
 	<!-- ================ -->
 	
-	<logger name="org.quartz" level="INFO"/>
-	<logger name="com.tsystems" level="DEBUG"/>
-	<logger name="de.mincom" level="DEBUG"/>
+	
 	<logger name="org.hibernate" level="INFO"/>
-	<logger name="de.mincom.fec.core.ocs.charging" level="TRACE"/>
+	<logger name="hr.ponge" level="TRACE"/>
 
 	<root level="INFO">
-		<appender-ref ref="FILE" />
-		<appender-ref ref="ALARM" />
-		<appender-ref ref="SCHEDULER"/>
+		<appender-ref ref="STDOUT" />
+		
 	</root>
 </configuration>

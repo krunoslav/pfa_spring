@@ -1,5 +1,6 @@
 package hr.ponge.test;
 
+import java.net.URL;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -8,10 +9,12 @@ import hr.ponge.pfa.model.Tenant;
 import hr.ponge.pfa.service.base.MessageListener;
 import hr.ponge.pfa.service.base.PfaMessage;
 import hr.ponge.pfa.service.env.tenant.TenantBL;
+import hr.ponge.pfa.service.env.tenant.TenantServiceTest;
 
 import org.slf4j.ext.XLogger;
 import org.slf4j.ext.XLoggerFactory;
 import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
 import org.springframework.context.support.FileSystemXmlApplicationContext;
 
 public class Test implements MessageListener {
@@ -27,8 +30,15 @@ public class Test implements MessageListener {
 
 	public void test(String[] args) {
 		log.entry(args);
-		ApplicationContext applicationContext = new FileSystemXmlApplicationContext(
-				"resource/spring/application-context.xml");
+//		ApplicationContext applicationContext = new FileSystemXmlApplicationContext(
+//				"resource/spring/application-context.xml");
+		URL res = Test.class.getClassLoader().getResource("spring/application-context.xml");
+		System.err.println("URL   "+res);
+		ApplicationContext	applicationContext= new ClassPathXmlApplicationContext("spring/application-context.xml");
+		
+		
+		
+		
 
 		// new ClassPathXmlApplicationContext("/application-context.xml");
 

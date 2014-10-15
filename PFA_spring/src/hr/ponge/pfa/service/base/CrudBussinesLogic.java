@@ -30,7 +30,7 @@ public abstract class CrudBussinesLogic<T extends EntityPfa, E extends EntityFil
 	 */
 
 	public T createEntity() throws PfaException {
-		messages.clear();
+		messages.get().clear();
 		T entity = newEntity();
 		entity.setCreationDate(new Date());
 		entity.setLastChangeDate(new Date());
@@ -54,7 +54,7 @@ public abstract class CrudBussinesLogic<T extends EntityPfa, E extends EntityFil
 	 */
 	@Override
 	public List<T> readEntity(E filter) throws PfaException {
-		messages.clear();
+		messages.get().clear();
 
 		List<T> res = readEntityCallback(filter);
 
@@ -72,7 +72,7 @@ public abstract class CrudBussinesLogic<T extends EntityPfa, E extends EntityFil
 	@SuppressWarnings("unchecked")
 	@Override
 	public T saveEntity(T entity) throws PfaException {
-		messages.clear();
+		messages.get().clear();
 		if (entity.getId() != 0
 				&& !getSessionFactory().getCurrentSession().contains(entity)) {
 		entity=(T) getSessionFactory().getCurrentSession().merge(entity);
@@ -84,12 +84,12 @@ public abstract class CrudBussinesLogic<T extends EntityPfa, E extends EntityFil
 		}
 
 		saveEntityCallback(entity);
-		if (checkForRollbackErrors(messages)) {
+		if (checkForRollbackErrors(messages.get())) {
 			throw new PfaRollbackException();
 		}
 		entity.setLastChangeDate(new Date());
 		getSessionFactory().getCurrentSession().persist(entity);
-
+		
 		return entity;
 	}
 
@@ -108,7 +108,7 @@ public abstract class CrudBussinesLogic<T extends EntityPfa, E extends EntityFil
 	 */
 	@Override
 	public void deleteEntity(T entity) throws PfaException {
-		messages.clear();
+		messages.get().clear();
 		
 		if (entity.getId() == 0) {
 			return;
@@ -118,7 +118,7 @@ public abstract class CrudBussinesLogic<T extends EntityPfa, E extends EntityFil
 			entity=(T) getSessionFactory().getCurrentSession().merge(entity);
 		}
 		validateEntity(OPERATION_DELETE, entity);
-		if (checkForRollbackErrors(messages)) {
+		if (checkForRollbackErrors(messages.get())) {
 			throw new PfaRollbackException();
 		}
 		deleteEntityCallback(entity);

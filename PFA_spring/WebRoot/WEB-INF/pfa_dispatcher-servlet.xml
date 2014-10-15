@@ -13,10 +13,10 @@
     http://www.springframework.org/schema/aop/spring-aop.xsd">
 
 	<import resource="mvc_spring.xml" />
-	<!-- 
+	
 	<import resource="aop.xml" />
 	<import resource="dataSource.xml" />
 	<import resource="tenant.xml" />
 	<import resource="common-beans.xml" />
- -->
+
 </beans>

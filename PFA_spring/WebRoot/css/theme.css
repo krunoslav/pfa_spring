@@ -63,59 +63,52 @@ thead{
 	border-bottom:1px solid #e8e7e1;
 	color:#a43708;
 }
-/***************
-	  Forms
-***************/
-form#form fieldset {
-	border:1px solid #e8e7e1;
-}
-form#form legend {
-	border:1px solid #e8e7e1;
-	background:#fff url(../img/form_red.gif) repeat-x center left;
-	color:#a43708;
-}
-form#form input {
-	border:1px solid #e8e7e1;
-	background:#fff url(../img/form_red.gif) repeat-x top left;
-}
-form#form textarea {
-	border:1px solid #e8e7e1;
-	background:#fff url(../img/form_red.gif) repeat-x bottom left;
-}
-form#form option {
-	background:#FFF;
-}
-form#form optgroup {
-	background:#e8e7e1;
-}
-form#form optgroup option {
 
-}
-form#form #button1, form#form #button2 {
-	color:#c00;
-}
-form#form #button1:hover, form#form #button2:hover {
-	color:#000;
-}
 /***************
 	Home
 ***************/
-#infobox{
+#searchResults{
 	border:1px solid #e8e7e1;
 }
-#infobox h3{
+#searchResults h3{
 	background:#f7f6f0;
 	border-bottom:1px solid #e8e7e1;
 	color:#a43708;
 }
-#rightnow {
+#actions {
 	border:1px solid #e8e7e1;
 }
-#rightnow .reallynow {
+#actions .reallynow {
 	background:#f7f6f0;
 	color:#a43708;
 }
-#rightnow h3{
+#actions h3{
 	background:#f7f6f0;
 	border-bottom:1px solid #e8e7e1;
+	color:#a43708;
 }
+
+#details{
+	border:1px solid #e8e7e1;
+}
+#details h3{
+	background:#f7f6f0;
+	border-bottom:1px solid #e8e7e1;
+	color:#a43708;
+}
+
+
+.buttons {
+	padding:3px;
+	margin: 10px;
+}
+.errorlist{
+	color: red;
+}
+.infolist{
+	color: blue;
+}
+.warnlist{
+	color: orange;
+}
+/* This button was generated using CSSButtonGenerator.com */

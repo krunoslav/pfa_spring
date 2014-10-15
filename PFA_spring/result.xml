@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite errors="0" failures="0" hostname="kruno-laptop" name="hr.ponge.pfa.service.env.tenant.TenantServiceTest" tests="4" time="3.169" timestamp="2014-06-05T13:59:25">
+<testsuite errors="0" failures="1" hostname="kruno-laptop" name="hr.ponge.pfa.service.env.tenant.TenantServiceTest" tests="4" time="3.547" timestamp="2014-10-14T14:58:51">
   <properties>
     <property name="ant.project.invoked-targets" value="tests" />
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment" />
-    <property name="sun.boot.library.path" value="/home/kruno/java/jdk1.6.0_25/jre/lib/amd64" />
-    <property name="java.vm.version" value="20.0-b11" />
-    <property name="ant.library.dir" value="/home/kruno/eclipse_kepler_EE/plugins/org.apache.ant_1.8.4.v201303080030/lib" />
-    <property name="ant.version" value="Apache Ant(TM) version 1.8.4 compiled on May 22 2012" />
-    <property name="ant.java.version" value="1.6" />
-    <property name="java.vm.vendor" value="Sun Microsystems Inc." />
-    <property name="java.vendor.url" value="http://java.sun.com/" />
+    <property name="sun.boot.library.path" value="/home/kruno/java/jdk1.7.0_60/jre/lib/amd64" />
+    <property name="java.vm.version" value="24.60-b09" />
+    <property name="ant.library.dir" value="/home/kruno/idea-IU-135.1289/lib/ant/lib" />
+    <property name="ant.version" value="Apache Ant(TM) version 1.8.2 compiled on December 20 2010" />
+    <property name="ant.java.version" value="1.7" />
+    <property name="java.vm.vendor" value="Oracle Corporation" />
+    <property name="java.vendor.url" value="http://java.oracle.com/" />
     <property name="path.separator" value=":" />
     <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM" />
     <property name="file.encoding.pkg" value="sun.io" />
@@ -18,106 +18,111 @@
     <property name="sun.os.patch.level" value="unknown" />
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification" />
     <property name="user.dir" value="/home/kruno/git/pfa_spring/PFA_spring/build" />
-    <property name="java.runtime.version" value="1.6.0_25-b06" />
+    <property name="java.runtime.version" value="1.7.0_60-b19" />
     <property name="java.awt.graphicsenv" value="sun.awt.X11GraphicsEnvironment" />
-    <property name="eclipse.pdebuild.scripts" value="/home/kruno/eclipse_kepler_EE/plugins/org.eclipse.pde.build_3.8.100.v20130514-1028/scripts//" />
     <property name="basedir" value="/home/kruno/git/pfa_spring/PFA_spring" />
-    <property name="java.endorsed.dirs" value="/home/kruno/java/jdk1.6.0_25/jre/lib/endorsed" />
+    <property name="java.endorsed.dirs" value="/home/kruno/java/jdk1.7.0_60/jre/lib/endorsed" />
     <property name="os.arch" value="amd64" />
     <property name="ant.project.default-target" value="all" />
     <property name="java.io.tmpdir" value="/tmp" />
-    <property name="ant.core.lib" value="/home/kruno/eclipse_kepler_EE/plugins/org.apache.ant_1.8.4.v201303080030/lib/ant.jar" />
+    <property name="ant.core.lib" value="/home/kruno/idea-IU-135.1289/lib/ant/lib/ant.jar" />
     <property name="ant.file.type.PFA BUILD" value="file" />
     <property name="line.separator" value="&#xa;" />
-    <property name="java.vm.specification.vendor" value="Sun Microsystems Inc." />
+    <property name="java.vm.specification.vendor" value="Oracle Corporation" />
     <property name="os.name" value="Linux" />
-    <property name="ant.home" value="/home/kruno/eclipse_kepler_EE/plugins/org.apache.ant_1.8.4.v201303080030" />
-    <property name="eclipse.pdebuild.templates" value="/home/kruno/eclipse_kepler_EE/plugins/org.eclipse.pde.build_3.8.100.v20130514-1028/templates//" />
+    <property name="ant.home" value="/home/kruno/idea-IU-135.1289/lib/ant" />
     <property name="ant.project.name" value="PFA BUILD" />
     <property name="sun.jnu.encoding" value="UTF-8" />
-    <property name="java.library.path" value="/usr/lib/jvm/java-6-openjdk-amd64/jre/lib/amd64/server:/usr/lib/jvm/java-6-openjdk-amd64/jre/lib/amd64:/usr/lib/jvm/java-6-openjdk-amd64/jre/../lib/amd64:/usr/java/packages/lib/amd64:/usr/lib/x86_64-linux-gnu/jni:/lib/x86_64-linux-gnu:/usr/lib/x86_64-linux-gnu:/usr/lib/jni:/lib:/usr/lib:/home/kruno/eclipse_kepler_EE/configuration/org.eclipse.osgi/bundles/659/1/.cp" />
-    <property name="eclipse.pdebuild.home" value="/home/kruno/eclipse_kepler_EE/plugins/org.eclipse.pde.build_3.8.100.v20130514-1028/.//" />
+    <property name="java.library.path" value="/home/kruno/idea-IU-135.1289/bin::/usr/java/packages/lib/amd64:/usr/lib64:/lib64:/lib:/usr/lib" />
     <property name="java.specification.name" value="Java Platform API Specification" />
-    <property name="java.class.version" value="50.0" />
+    <property name="java.class.version" value="51.0" />
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers" />
     <property name="os.version" value="3.2.0-58-generic" />
     <property name="ant.file" value="/home/kruno/git/pfa_spring/PFA_spring/build/build.xml" />
     <property name="user.home" value="/home/kruno" />
     <property name="user.timezone" value="" />
     <property name="java.awt.printerjob" value="sun.print.PSPrinterJob" />
+    <property name="java.specification.version" value="1.7" />
     <property name="file.encoding" value="UTF-8" />
-    <property name="java.specification.version" value="1.6" />
-    <property name="java.class.path" value="/home/kruno/eclipse_kepler_EE/plugins/org.apache.ant_1.8.4.v201303080030/lib/ant-antlr.jar:/home/kruno/eclipse_kepler_EE/plugins/org.apache.ant_1.8.4.v201303080030/lib/ant-apache-bcel.jar:/home/kruno/eclipse_kepler_EE/plugins/org.apache.ant_1.8.4.v201303080030/lib/ant-apache-bsf.jar:/home/kruno/eclipse_kepler_EE/plugins/org.apache.ant_1.8.4.v201303080030/lib/ant-apache-log4j.jar:/home/kruno/eclipse_kepler_EE/plugins/org.apache.ant_1.8.4.v201303080030/lib/ant-apache-oro.jar:/home/kruno/eclipse_kepler_EE/plugins/org.apache.ant_1.8.4.v201303080030/lib/ant-apache-regexp.jar:/home/kruno/eclipse_kepler_EE/plugins/org.apache.ant_1.8.4.v201303080030/lib/ant-apache-resolver.jar:/home/kruno/eclipse_kepler_EE/plugins/org.apache.ant_1.8.4.v201303080030/lib/ant-apache-xalan2.jar:/home/kruno/eclipse_kepler_EE/plugins/org.apache.ant_1.8.4.v201303080030/lib/ant-commons-logging.jar:/home/kruno/eclipse_kepler_EE/plugins/org.apache.ant_1.8.4.v201303080030/lib/ant-commons-net.jar:/home/kruno/eclipse_kepler_EE/plugins/org.apache.ant_1.8.4.v201303080030/lib/ant-jai.jar:/home/kruno/eclipse_kepler_EE/plugins/org.apache.ant_1.8.4.v201303080030/lib/ant-javamail.jar:/home/kruno/eclipse_kepler_EE/plugins/org.apache.ant_1.8.4.v201303080030/lib/ant-jdepend.jar:/home/kruno/eclipse_kepler_EE/plugins/org.apache.ant_1.8.4.v201303080030/lib/ant-jmf.jar:/home/kruno/eclipse_kepler_EE/plugins/org.apache.ant_1.8.4.v201303080030/lib/ant-jsch.jar:/home/kruno/eclipse_kepler_EE/plugins/org.apache.ant_1.8.4.v201303080030/lib/ant-junit.jar:/home/kruno/eclipse_kepler_EE/plugins/org.apache.ant_1.8.4.v201303080030/lib/ant-junit4.jar:/home/kruno/eclipse_kepler_EE/plugins/org.apache.ant_1.8.4.v201303080030/lib/ant-launcher.jar:/home/kruno/eclipse_kepler_EE/plugins/org.apache.ant_1.8.4.v201303080030/lib/ant-netrexx.jar:/home/kruno/eclipse_kepler_EE/plugins/org.apache.ant_1.8.4.v201303080030/lib/ant-swing.jar:/home/kruno/eclipse_kepler_EE/plugins/org.apache.ant_1.8.4.v201303080030/lib/ant-testutil.jar:/home/kruno/eclipse_kepler_EE/plugins/org.apache.ant_1.8.4.v201303080030/lib/ant.jar:/home/kruno/eclipse_kepler_EE/configuration/org.eclipse.osgi/bundles/825/1/.cp/lib/antdebug.jar:/home/kruno/eclipse_kepler_EE/configuration/org.eclipse.osgi/bundles/825/1/.cp/lib/remote.jar:/home/kruno/eclipse_kepler_EE/configuration/org.eclipse.osgi/bundles/826/1/.cp/lib/remoteAnt.jar:/home/kruno/java/jdk1.6.0_25/lib/tools.jar:/home/kruno/eclipse_kepler_EE/plugins/org.eclipse.swt.gtk.linux.x86_64_3.102.1.v20130827-2048.jar" />
+    <property name="java.class.path" value="/home/kruno/idea-IU-135.1289/lib/ant/lib/ant-antlr.jar:/home/kruno/idea-IU-135.1289/lib/ant/lib/ant-commons-net.jar:/home/kruno/idea-IU-135.1289/lib/ant/lib/ant-apache-resolver.jar:/home/kruno/idea-IU-135.1289/lib/ant/lib/ant-testutil.jar:/home/kruno/idea-IU-135.1289/lib/ant/lib/ant-launcher.jar:/home/kruno/idea-IU-135.1289/lib/ant/lib/ant-swing.jar:/home/kruno/idea-IU-135.1289/lib/ant/lib/ant-apache-regexp.jar:/home/kruno/idea-IU-135.1289/lib/ant/lib/ant-apache-oro.jar:/home/kruno/idea-IU-135.1289/lib/ant/lib/ant-apache-bsf.jar:/home/kruno/idea-IU-135.1289/lib/ant/lib/ant-jdepend.jar:/home/kruno/idea-IU-135.1289/lib/ant/lib/ant-jsch.jar:/home/kruno/idea-IU-135.1289/lib/ant/lib/ant-apache-bcel.jar:/home/kruno/idea-IU-135.1289/lib/ant/lib/ant-jai.jar:/home/kruno/idea-IU-135.1289/lib/ant/lib/ant-apache-xalan2.jar:/home/kruno/idea-IU-135.1289/lib/ant/lib/ant.jar:/home/kruno/idea-IU-135.1289/lib/ant/lib/ant-netrexx.jar:/home/kruno/idea-IU-135.1289/lib/ant/lib/ant-junit.jar:/home/kruno/idea-IU-135.1289/lib/ant/lib/ant-commons-logging.jar:/home/kruno/idea-IU-135.1289/lib/ant/lib/ant-apache-log4j.jar:/home/kruno/idea-IU-135.1289/lib/ant/lib/ant-javamail.jar:/home/kruno/idea-IU-135.1289/lib/ant/lib/ant-jmf.jar:/home/kruno/java/jdk1.7.0_60/lib/tools.jar:/home/kruno/idea-IU-135.1289/lib/idea_rt.jar" />
     <property name="user.name" value="kruno" />
-    <property name="java.vm.specification.version" value="1.0" />
+    <property name="java.vm.specification.version" value="1.7" />
+    <property name="java.home" value="/home/kruno/java/jdk1.7.0_60/jre" />
     <property name="sun.arch.data.model" value="64" />
-    <property name="sun.java.command" value="org.eclipse.ant.internal.launching.remote.InternalAntRunner -Dorg.eclipse.ant.core.ANT_PROCESS_ID=1401976764035 -Declipse.connect.port=50511 -Declipse.pdebuild.home=/home/kruno/eclipse_kepler_EE/plugins/org.eclipse.pde.build_3.8.100.v20130514-1028/.// -Declipse.pdebuild.scripts=/home/kruno/eclipse_kepler_EE/plugins/org.eclipse.pde.build_3.8.100.v20130514-1028/scripts// -Declipse.pdebuild.templates=/home/kruno/eclipse_kepler_EE/plugins/org.eclipse.pde.build_3.8.100.v20130514-1028/templates// -Dant.home=/home/kruno/eclipse_kepler_EE/plugins/org.apache.ant_1.8.4.v201303080030 -logger org.eclipse.ant.internal.launching.remote.logger.RemoteAntBuildLogger -inputhandler org.eclipse.ant.internal.ui.antsupport.inputhandler.ProxyInputHandler -buildfile /home/kruno/git/pfa_spring/PFA_spring/build/build.xml tests" />
-    <property name="java.home" value="/home/kruno/java/jdk1.6.0_25/jre" />
-    <property name="java.specification.vendor" value="Sun Microsystems Inc." />
-    <property name="user.language" value="en" />
+    <property name="sun.java.command" value="com.intellij.rt.ant.execution.AntMain2 -logger com.intellij.rt.ant.execution.IdeaAntLogger2 -inputhandler com.intellij.rt.ant.execution.IdeaInputHandler -buildfile /home/kruno/git/pfa_spring/PFA_spring/build/build.xml tests" />
+    <property name="java.specification.vendor" value="Oracle Corporation" />
     <property name="ant.file.PFA BUILD" value="/home/kruno/git/pfa_spring/PFA_spring/build/build.xml" />
+    <property name="user.language" value="en" />
+    <property name="awt.toolkit" value="sun.awt.X11.XToolkit" />
     <property name="java.vm.info" value="mixed mode" />
-    <property name="java.version" value="1.6.0_25" />
-    <property name="java.ext.dirs" value="/home/kruno/java/jdk1.6.0_25/jre/lib/ext:/usr/java/packages/lib/ext" />
-    <property name="sun.boot.class.path" value="/home/kruno/java/jdk1.6.0_25/jre/lib/resources.jar:/home/kruno/java/jdk1.6.0_25/jre/lib/rt.jar:/home/kruno/java/jdk1.6.0_25/jre/lib/sunrsasign.jar:/home/kruno/java/jdk1.6.0_25/jre/lib/jsse.jar:/home/kruno/java/jdk1.6.0_25/jre/lib/jce.jar:/home/kruno/java/jdk1.6.0_25/jre/lib/charsets.jar:/home/kruno/java/jdk1.6.0_25/jre/lib/modules/jdk.boot.jar:/home/kruno/java/jdk1.6.0_25/jre/classes" />
-    <property name="java.vendor" value="Sun Microsystems Inc." />
+    <property name="java.version" value="1.7.0_60" />
+    <property name="java.ext.dirs" value="/home/kruno/java/jdk1.7.0_60/jre/lib/ext:/usr/java/packages/lib/ext" />
+    <property name="sun.boot.class.path" value="/home/kruno/java/jdk1.7.0_60/jre/lib/resources.jar:/home/kruno/java/jdk1.7.0_60/jre/lib/rt.jar:/home/kruno/java/jdk1.7.0_60/jre/lib/sunrsasign.jar:/home/kruno/java/jdk1.7.0_60/jre/lib/jsse.jar:/home/kruno/java/jdk1.7.0_60/jre/lib/jce.jar:/home/kruno/java/jdk1.7.0_60/jre/lib/charsets.jar:/home/kruno/java/jdk1.7.0_60/jre/lib/jfr.jar:/home/kruno/java/jdk1.7.0_60/jre/classes" />
+    <property name="java.vendor" value="Oracle Corporation" />
     <property name="file.separator" value="/" />
-    <property name="java.vendor.url.bug" value="http://java.sun.com/cgi-bin/bugreport.cgi" />
+    <property name="java.vendor.url.bug" value="http://bugreport.sun.com/bugreport/" />
     <property name="sun.cpu.endian" value="little" />
     <property name="sun.io.unicode.encoding" value="UnicodeLittle" />
+    <property name="ant.file.type" value="file" />
     <property name="sun.desktop" value="gnome" />
     <property name="sun.cpu.isalist" value="" />
   </properties>
-  <testcase classname="hr.ponge.pfa.service.env.tenant.TenantServiceTest" name="testCreateEntity" time="0.0060" />
-  <testcase classname="hr.ponge.pfa.service.env.tenant.TenantServiceTest" name="testReadEntity" time="0.183" />
-  <testcase classname="hr.ponge.pfa.service.env.tenant.TenantServiceTest" name="testDeleteEntity" time="0.0" />
-  <testcase classname="hr.ponge.pfa.service.env.tenant.TenantServiceTest" name="testSaveEntity" time="0.07" />
-  <system-out><![CDATA[1388 [main] INFO  o.h.annotations.common.Version - HCANN000001: Hibernate Commons Annotations {4.0.4.Final} 
-1400 [main] INFO  org.hibernate.Version - HHH000412: Hibernate Core {4.3.5.Final} 
-1402 [main] INFO  org.hibernate.cfg.Environment - HHH000206: hibernate.properties not found 
-1405 [main] INFO  org.hibernate.cfg.Environment - HHH000021: Bytecode provider name : javassist 
-1823 [main] INFO  org.hibernate.dialect.Dialect - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect 
-1835 [main] INFO  o.h.e.j.internal.LobCreatorBuilder - HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4 
-2049 [main] INFO  o.h.e.t.i.TransactionFactoryInitiator - HHH000399: Using default transaction strategy (direct JDBC transactions) 
-2055 [main] INFO  o.h.h.i.a.ASTQueryTranslatorFactory - HHH000397: Using ASTQueryTranslatorFactory 
-2431 [main] INFO  o.h.tool.hbm2ddl.SchemaUpdate - HHH000228: Running hbm2ddl schema update 
-2431 [main] INFO  o.h.tool.hbm2ddl.SchemaUpdate - HHH000102: Fetching database metadata 
-2436 [main] INFO  o.h.tool.hbm2ddl.SchemaUpdate - HHH000396: Updating schema 
-2482 [main] INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000261: Table found: public.pfa_document 
-2482 [main] INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [creation_date, id, document_form, description, user_id, last_change_date] 
-2482 [main] INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: [fk_ows7oys13gbitopmj6k93l4f4] 
-2482 [main] INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [pfa_document_pkey] 
-2514 [main] INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000261: Table found: public.pfa_document_template 
-2514 [main] INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [creation_date, id, document_form, description, tenant_id, last_change_date] 
-2514 [main] INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: [fk_14y00rshi1juwsrdg0bwnq7fh] 
-2514 [main] INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [pfa_document_template_pkey] 
-2554 [main] INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000261: Table found: public.pfa_picture 
-2554 [main] INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [y_size, picture, creation_date, id, x_size, pic_byte_size, user_id, md5_code, last_change_date] 
-2554 [main] INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: [fk_tnkdy3q1pbfrqf6b8pjml2afp] 
-2554 [main] INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [pfa_picture_pkey] 
-2576 [main] INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000261: Table found: public.pfa_template_picture 
-2576 [main] INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [y_size, picture, creation_date, id, x_size, pic_byte_size, tenant_id, md5_code, last_change_date] 
-2577 [main] INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: [fk_79jgow0lex8yo3yy6m99hk8kq] 
-2577 [main] INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [pfa_template_picture_pkey] 
-2607 [main] INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000261: Table found: public.pfa_tenant 
-2607 [main] INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [creation_date, id, tenant_properties_id, tenant_name, last_change_date] 
-2607 [main] INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: [fk_9d1lqywq83jg0fakb8mh6n2qu] 
-2607 [main] INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [uk_sfrlrm8mffhnlrbcu6ikrdiu7, pfa_tenant_pkey, uk_9d1lqywq83jg0fakb8mh6n2qu] 
-2630 [main] INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000261: Table found: public.pfa_tenant_properties 
-2631 [main] INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [creation_date, id, last_change_date] 
-2631 [main] INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: [] 
-2632 [main] INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [pfa_tenant_properties_pkey] 
-2669 [main] INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000261: Table found: public.pfa_user 
-2669 [main] INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [creation_date, id, user_properties, username, users_password, address, last_access_time, date_of_birth, tenant_id, surname, users_name, last_change_date] 
-2669 [main] INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: [fk_l84f9x1vfafs4rn4r89nc1560, fk_ln3u8ygvu56dnxjk56a29ueug] 
-2669 [main] INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [pfa_user_pkey, uk_ln3u8ygvu56dnxjk56a29ueug] 
-2695 [main] INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000261: Table found: public.pfa_user_properties 
-2695 [main] INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000037: Columns: [creation_date, id, last_change_date] 
-2696 [main] INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000108: Foreign keys: [] 
-2696 [main] INFO  o.h.tool.hbm2ddl.TableMetadata - HHH000126: Indexes: [pfa_user_properties_pkey] 
-2699 [main] INFO  o.h.tool.hbm2ddl.SchemaUpdate - HHH000232: Schema update complete 
-2905 [main] TRACE hr.ponge.pfa.aop.LoggerAopImpl - ENTRY hr.ponge.pfa.service.util.DbUtilImpl.executeSqlScript 
-2906 [main] TRACE hr.ponge.pfa.aop.LoggerAopImpl - ENTRY ARG:	ALTER SEQUENCE pfa_doc_template_sequence RESTART WITH 1000;
+  <testcase classname="hr.ponge.pfa.service.env.tenant.TenantServiceTest" name="testCreateEntity" time="0.006" />
+  <testcase classname="hr.ponge.pfa.service.env.tenant.TenantServiceTest" name="testReadEntity" time="0.15" />
+  <testcase classname="hr.ponge.pfa.service.env.tenant.TenantServiceTest" name="testDeleteEntity" time="0.002" />
+  <testcase classname="hr.ponge.pfa.service.env.tenant.TenantServiceTest" name="testSaveEntity" time="0.077">
+    <failure message="NO ROLLBACK WHER SHOULD BE ONE" type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: NO ROLLBACK WHER SHOULD BE ONE
+	at hr.ponge.pfa.service.env.tenant.TenantServiceTest.testSaveEntity(TenantServiceTest.java:110)
+	at com.intellij.rt.ant.execution.AntMain2.main(AntMain2.java:30)
+</failure>
+  </testcase>
+  <system-out><![CDATA[1530 [main] INFO  o.h.annotations.common.Version <clinit> 66 - HCANN000001: Hibernate Commons Annotations {4.0.4.Final} 
+1543 [main] INFO  org.hibernate.Version logVersion 54 - HHH000412: Hibernate Core {4.3.5.Final} 
+1545 [main] INFO  org.hibernate.cfg.Environment <clinit> 239 - HHH000206: hibernate.properties not found 
+1547 [main] INFO  org.hibernate.cfg.Environment buildBytecodeProvider 346 - HHH000021: Bytecode provider name : javassist 
+2002 [main] INFO  org.hibernate.dialect.Dialect <init> 145 - HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect 
+2022 [main] INFO  o.h.e.j.internal.LobCreatorBuilder useContextualLobCreation 97 - HHH000423: Disabling contextual LOB creation as JDBC driver reported JDBC version [3] less than 4 
+2304 [main] INFO  o.h.e.t.i.TransactionFactoryInitiator initiateService 62 - HHH000399: Using default transaction strategy (direct JDBC transactions) 
+2311 [main] INFO  o.h.h.i.a.ASTQueryTranslatorFactory <init> 47 - HHH000397: Using ASTQueryTranslatorFactory 
+2396 [main] INFO  o.h.validator.internal.util.Version <clinit> 27 - HV000001: Hibernate Validator 5.1.1.Final 
+2778 [main] INFO  o.h.tool.hbm2ddl.SchemaUpdate execute 182 - HHH000228: Running hbm2ddl schema update 
+2779 [main] INFO  o.h.tool.hbm2ddl.SchemaUpdate execute 193 - HHH000102: Fetching database metadata 
+2784 [main] INFO  o.h.tool.hbm2ddl.SchemaUpdate execute 205 - HHH000396: Updating schema 
+2843 [main] INFO  o.h.tool.hbm2ddl.TableMetadata <init> 66 - HHH000261: Table found: public.pfa_document 
+2844 [main] INFO  o.h.tool.hbm2ddl.TableMetadata <init> 67 - HHH000037: Columns: [creation_date, id, document_form, description, user_id, last_change_date] 
+2845 [main] INFO  o.h.tool.hbm2ddl.TableMetadata <init> 69 - HHH000108: Foreign keys: [fk_ows7oys13gbitopmj6k93l4f4] 
+2847 [main] INFO  o.h.tool.hbm2ddl.TableMetadata <init> 70 - HHH000126: Indexes: [pfa_document_pkey] 
+2895 [main] INFO  o.h.tool.hbm2ddl.TableMetadata <init> 66 - HHH000261: Table found: public.pfa_document_template 
+2896 [main] INFO  o.h.tool.hbm2ddl.TableMetadata <init> 67 - HHH000037: Columns: [creation_date, id, document_form, description, tenant_id, last_change_date] 
+2897 [main] INFO  o.h.tool.hbm2ddl.TableMetadata <init> 69 - HHH000108: Foreign keys: [fk_14y00rshi1juwsrdg0bwnq7fh] 
+2898 [main] INFO  o.h.tool.hbm2ddl.TableMetadata <init> 70 - HHH000126: Indexes: [pfa_document_template_pkey] 
+2926 [main] INFO  o.h.tool.hbm2ddl.TableMetadata <init> 66 - HHH000261: Table found: public.pfa_picture 
+2926 [main] INFO  o.h.tool.hbm2ddl.TableMetadata <init> 67 - HHH000037: Columns: [y_size, picture, creation_date, id, x_size, pic_byte_size, user_id, md5_code, last_change_date] 
+2926 [main] INFO  o.h.tool.hbm2ddl.TableMetadata <init> 69 - HHH000108: Foreign keys: [fk_tnkdy3q1pbfrqf6b8pjml2afp] 
+2927 [main] INFO  o.h.tool.hbm2ddl.TableMetadata <init> 70 - HHH000126: Indexes: [pfa_picture_pkey] 
+2952 [main] INFO  o.h.tool.hbm2ddl.TableMetadata <init> 66 - HHH000261: Table found: public.pfa_template_picture 
+2952 [main] INFO  o.h.tool.hbm2ddl.TableMetadata <init> 67 - HHH000037: Columns: [y_size, picture, creation_date, id, x_size, pic_byte_size, tenant_id, md5_code, last_change_date] 
+2952 [main] INFO  o.h.tool.hbm2ddl.TableMetadata <init> 69 - HHH000108: Foreign keys: [fk_79jgow0lex8yo3yy6m99hk8kq] 
+2953 [main] INFO  o.h.tool.hbm2ddl.TableMetadata <init> 70 - HHH000126: Indexes: [pfa_template_picture_pkey] 
+2985 [main] INFO  o.h.tool.hbm2ddl.TableMetadata <init> 66 - HHH000261: Table found: public.pfa_tenant 
+2986 [main] INFO  o.h.tool.hbm2ddl.TableMetadata <init> 67 - HHH000037: Columns: [creation_date, id, tenant_properties_id, tenant_name, last_change_date] 
+2987 [main] INFO  o.h.tool.hbm2ddl.TableMetadata <init> 69 - HHH000108: Foreign keys: [fk_9d1lqywq83jg0fakb8mh6n2qu] 
+2988 [main] INFO  o.h.tool.hbm2ddl.TableMetadata <init> 70 - HHH000126: Indexes: [uk_sfrlrm8mffhnlrbcu6ikrdiu7, pfa_tenant_pkey, uk_9d1lqywq83jg0fakb8mh6n2qu] 
+3034 [main] INFO  o.h.tool.hbm2ddl.TableMetadata <init> 66 - HHH000261: Table found: public.pfa_tenant_properties 
+3035 [main] INFO  o.h.tool.hbm2ddl.TableMetadata <init> 67 - HHH000037: Columns: [creation_date, id, last_change_date] 
+3036 [main] INFO  o.h.tool.hbm2ddl.TableMetadata <init> 69 - HHH000108: Foreign keys: [] 
+3037 [main] INFO  o.h.tool.hbm2ddl.TableMetadata <init> 70 - HHH000126: Indexes: [pfa_tenant_properties_pkey] 
+3073 [main] INFO  o.h.tool.hbm2ddl.TableMetadata <init> 66 - HHH000261: Table found: public.pfa_user 
+3075 [main] INFO  o.h.tool.hbm2ddl.TableMetadata <init> 67 - HHH000037: Columns: [creation_date, id, user_properties, username, users_password, address, last_access_time, date_of_birth, tenant_id, surname, users_name, last_change_date] 
+3075 [main] INFO  o.h.tool.hbm2ddl.TableMetadata <init> 69 - HHH000108: Foreign keys: [fk_l84f9x1vfafs4rn4r89nc1560, fk_ln3u8ygvu56dnxjk56a29ueug] 
+3076 [main] INFO  o.h.tool.hbm2ddl.TableMetadata <init> 70 - HHH000126: Indexes: [pfa_user_pkey, uk_ln3u8ygvu56dnxjk56a29ueug] 
+3101 [main] INFO  o.h.tool.hbm2ddl.TableMetadata <init> 66 - HHH000261: Table found: public.pfa_user_properties 
+3103 [main] INFO  o.h.tool.hbm2ddl.TableMetadata <init> 67 - HHH000037: Columns: [creation_date, id, last_change_date] 
+3104 [main] INFO  o.h.tool.hbm2ddl.TableMetadata <init> 69 - HHH000108: Foreign keys: [] 
+3104 [main] INFO  o.h.tool.hbm2ddl.TableMetadata <init> 70 - HHH000126: Indexes: [pfa_user_properties_pkey] 
+3111 [main] INFO  o.h.tool.hbm2ddl.SchemaUpdate execute 242 - HHH000232: Schema update complete 
+3335 [main] TRACE hr.ponge.pfa.aop.LoggerAopImpl aroundAdvice 50 - ENTRY hr.ponge.pfa.service.util.DbUtilImpl.executeSqlScript 
+3335 [main] TRACE hr.ponge.pfa.aop.LoggerAopImpl aroundAdvice 52 - ENTRY ARG:	ALTER SEQUENCE pfa_doc_template_sequence RESTART WITH 1000;
 	ALTER SEQUENCE pfa_document_sequence RESTART WITH 1000;
 	ALTER SEQUENCE pfa_picture_sequence RESTART WITH 1000;
 	ALTER SEQUENCE pfa_tenant_prop_sequence RESTART WITH 1000;
@@ -142,228 +147,90 @@
 		VALUES  (1,current_timestamp,current_timestamp,'Sjenjak 5, 31000 Osijek','1979-01-01',current_timestamp,'test','test','Samardžić','Krunoslav',1 , 1);
 	INSERT INTO pfa_user (id , creation_date ,last_change_date , address , date_of_birth ,last_access_time, username, users_password,surname , users_name,tenant_id,user_properties) 
 		VALUES  (2,current_timestamp,current_timestamp,'Sjenjak 131, 31000 Osijek','1976-09-28',current_timestamp,'test1','test1','Samardžić','Damir',1 , 2); 
-Hibernate: 
-    BEGIN;  ALTER SEQUENCE pfa_doc_template_sequence RESTART WITH 1000;  ALTER SEQUENCE pfa_document_sequence RESTART WITH 1000;  ALTER SEQUENCE pfa_picture_sequence RESTART WITH 1000;  ALTER SEQUENCE pfa_tenant_prop_sequence RESTART WITH 1000;  ALTER SEQUENCE pfa_tenant_sequence RESTART WITH 1000;  ALTER SEQUENCE pfa_user_sequence RESTART WITH 1000;  TRUNCATE TABLE pfa_tenant CASCADE;  TRUNCATE TABLE pfa_tenant_properties CASCADE;  TRUNCATE TABLE pfa_document CASCADE;  TRUNCATE TABLE pfa_document_template CASCADE;  TRUNCATE TABLE pfa_picture CASCADE;  TRUNCATE TABLE pfa_template_picture CASCADE;  TRUNCATE TABLE pfa_user CASCADE;  TRUNCATE TABLE pfa_user_properties CASCADE;     INSERT 
-    INTO
-        pfa_tenant_properties
-        (id,creation_date,last_change_date)  
-    VALUES
-        (1,current_timestamp,current_timestamp);  INSERT 
-        INTO
-            pfa_tenant
-            (id,creation_date,last_change_date,tenant_name,tenant_properties_id) 
-        VALUES
-            (1,current_timestamp,current_timestamp,'PONGE', 1);  INSERT 
-            INTO
-                pfa_user_properties
-                (id,creation_date,last_change_date) 
-            VALUES
-                (1,current_timestamp,current_timestamp);  INSERT 
-                INTO
-                    pfa_user_properties
-                    (id,creation_date,last_change_date) 
-                VALUES
-                    (2,current_timestamp,current_timestamp);         INSERT 
-                    INTO
-                        pfa_user
-                        (id , creation_date ,last_change_date , address , date_of_birth ,last_access_time, username, users_password,surname , users_name,tenant_id,user_properties)    
-                    VALUES
-                        (1,current_timestamp,current_timestamp,'Sjenjak 5, 31000 Osijek','1979-01-01',current_timestamp,'test','test','Samardžić','Krunoslav',1 , 1);  INSERT 
-                        INTO
-                            pfa_user
-                            (id , creation_date ,last_change_date , address , date_of_birth ,last_access_time, username, users_password,surname , users_name,tenant_id,user_properties)    
-                        VALUES
-                            (2,current_timestamp,current_timestamp,'Sjenjak 131, 31000 Osijek','1976-09-28',current_timestamp,'test1','test1','Samardžić','Damir',1 , 2);END;
-3162 [main] TRACE hr.ponge.pfa.aop.LoggerAopImpl - TIME TO EXECUTE METHOD hr.ponge.pfa.service.util.DbUtilImpl.executeSqlScript  TIME:258 
-3162 [main] TRACE hr.ponge.pfa.aop.LoggerAopImpl - EXIT hr.ponge.pfa.service.util.DbUtilImpl.executeSqlScript  RETURN VALUE(0) 
-3162 [main] INFO  org.junit.Test - EXECUTE BRINGUP RESULT 0 
-3172 [main] TRACE hr.ponge.pfa.aop.LoggerAopImpl - ENTRY hr.ponge.pfa.service.env.tenant.TenantBLImpl.registerMessageListener 
-3172 [main] TRACE hr.ponge.pfa.aop.LoggerAopImpl - ENTRY ARG:hr.ponge.pfa.service.env.tenant.TenantServiceTest@2a36bb87 
-3172 [main] TRACE hr.ponge.pfa.aop.LoggerAopImpl - TIME TO EXECUTE METHOD hr.ponge.pfa.service.env.tenant.TenantBLImpl.registerMessageListener  TIME:0 
-3173 [main] TRACE hr.ponge.pfa.aop.LoggerAopImpl - EXIT hr.ponge.pfa.service.env.tenant.TenantBLImpl.registerMessageListener 
-3173 [main] TRACE hr.ponge.pfa.aop.LoggerAopImpl - ENTRY hr.ponge.pfa.service.env.tenant.TenantBLImpl.createEntity 
-3174 [main] TRACE hr.ponge.pfa.aop.LoggerAopImpl - TIME TO EXECUTE METHOD hr.ponge.pfa.service.env.tenant.TenantBLImpl.createEntity  TIME:1 
-3174 [main] TRACE hr.ponge.pfa.aop.LoggerAopImpl - EXIT hr.ponge.pfa.service.env.tenant.TenantBLImpl.createEntity  RETURN VALUE(Tenant [id=0, name=]) 
-3177 [main] TRACE hr.ponge.pfa.aop.LoggerAopImpl - ENTRY hr.ponge.pfa.service.env.tenant.TenantBLImpl.registerMessageListener 
-3177 [main] TRACE hr.ponge.pfa.aop.LoggerAopImpl - ENTRY ARG:hr.ponge.pfa.service.env.tenant.TenantServiceTest@14a1e7ad 
-3177 [main] TRACE hr.ponge.pfa.aop.LoggerAopImpl - TIME TO EXECUTE METHOD hr.ponge.pfa.service.env.tenant.TenantBLImpl.registerMessageListener  TIME:0 
-3177 [main] TRACE hr.ponge.pfa.aop.LoggerAopImpl - EXIT hr.ponge.pfa.service.env.tenant.TenantBLImpl.registerMessageListener 
-3178 [main] TRACE hr.ponge.pfa.aop.LoggerAopImpl - ENTRY hr.ponge.pfa.service.env.tenant.TenantBLImpl.readEntity 
-3178 [main] TRACE hr.ponge.pfa.aop.LoggerAopImpl - ENTRY ARG:hr.ponge.pfa.service.env.tenant.TenantFilterOptions@11711970 
-Hibernate: 
-    /* Select
-        t 
-    from
-        Tenant t  
-    where
-        t.id != 0  */ select
-            tenant0_.id as id1_4_,
-            tenant0_.creation_date as creation2_4_,
-            tenant0_.last_change_date as last_cha3_4_,
-            tenant0_.tenant_name as tenant_n4_4_,
-            tenant0_.tenant_properties_id as tenant_p5_4_ 
-        from
-            public.PFA_TENANT tenant0_ 
-        where
-            tenant0_.id<>0
-Hibernate: 
-    select
-        tenantprop0_.id as id1_5_0_,
-        tenantprop0_.creation_date as creation2_5_0_,
-        tenantprop0_.last_change_date as last_cha3_5_0_,
-        tenant1_.id as id1_4_1_,
-        tenant1_.creation_date as creation2_4_1_,
-        tenant1_.last_change_date as last_cha3_4_1_,
-        tenant1_.tenant_name as tenant_n4_4_1_,
-        tenant1_.tenant_properties_id as tenant_p5_4_1_ 
-    from
-        public.PFA_TENANT_PROPERTIES tenantprop0_ 
-    left outer join
-        public.PFA_TENANT tenant1_ 
-            on tenantprop0_.id=tenant1_.tenant_properties_id 
-    where
-        tenantprop0_.id=?
-Hibernate: 
-    /* load hr.ponge.pfa.model.Tenant */ select
-        tenant0_.id as id1_4_1_,
-        tenant0_.creation_date as creation2_4_1_,
-        tenant0_.last_change_date as last_cha3_4_1_,
-        tenant0_.tenant_name as tenant_n4_4_1_,
-        tenant0_.tenant_properties_id as tenant_p5_4_1_,
-        tenantprop1_.id as id1_5_0_,
-        tenantprop1_.creation_date as creation2_5_0_,
-        tenantprop1_.last_change_date as last_cha3_5_0_ 
-    from
-        public.PFA_TENANT tenant0_ 
-    left outer join
-        public.PFA_TENANT_PROPERTIES tenantprop1_ 
-            on tenant0_.tenant_properties_id=tenantprop1_.id 
-    where
-        tenant0_.tenant_properties_id=?
-3360 [main] TRACE hr.ponge.pfa.aop.LoggerAopImpl - TIME TO EXECUTE METHOD hr.ponge.pfa.service.env.tenant.TenantBLImpl.readEntity  TIME:182 
-3360 [main] TRACE hr.ponge.pfa.aop.LoggerAopImpl - EXIT hr.ponge.pfa.service.env.tenant.TenantBLImpl.readEntity  RETURN VALUE([Tenant [id=1, name=PONGE]]) 
-3361 [main] TRACE hr.ponge.pfa.aop.LoggerAopImpl - ENTRY hr.ponge.pfa.service.env.tenant.TenantBLImpl.registerMessageListener 
-3361 [main] TRACE hr.ponge.pfa.aop.LoggerAopImpl - ENTRY ARG:hr.ponge.pfa.service.env.tenant.TenantServiceTest@600f11bc 
-3361 [main] TRACE hr.ponge.pfa.aop.LoggerAopImpl - TIME TO EXECUTE METHOD hr.ponge.pfa.service.env.tenant.TenantBLImpl.registerMessageListener  TIME:0 
-3361 [main] TRACE hr.ponge.pfa.aop.LoggerAopImpl - EXIT hr.ponge.pfa.service.env.tenant.TenantBLImpl.registerMessageListener 
-3361 [main] TRACE hr.ponge.pfa.aop.LoggerAopImpl - ENTRY hr.ponge.pfa.service.env.tenant.TenantBLImpl.createEntity 
-3362 [main] TRACE hr.ponge.pfa.aop.LoggerAopImpl - TIME TO EXECUTE METHOD hr.ponge.pfa.service.env.tenant.TenantBLImpl.createEntity  TIME:0 
-3362 [main] TRACE hr.ponge.pfa.aop.LoggerAopImpl - EXIT hr.ponge.pfa.service.env.tenant.TenantBLImpl.createEntity  RETURN VALUE(Tenant [id=0, name=]) 
-3363 [main] TRACE hr.ponge.pfa.aop.LoggerAopImpl - ENTRY hr.ponge.pfa.service.env.tenant.TenantBLImpl.saveEntity 
-3363 [main] TRACE hr.ponge.pfa.aop.LoggerAopImpl - ENTRY ARG:Tenant [id=0, name=PERICA] 
-Hibernate: 
-    /* Select
-        t.id 
-    from
-        Tenant t 
-    where
-        t.name=:name 
-        and t.id<>:id  */ select
-            tenant0_.id as col_0_0_ 
-        from
-            public.PFA_TENANT tenant0_ 
-        where
-            tenant0_.tenant_name=? 
-            and tenant0_.id<>?
-Hibernate: 
-    select
-        nextval ('public.PFA_TENANT_SEQUENCE')
-Hibernate: 
-    select
-        nextval ('public.PFA_TENANT_PROP_SEQUENCE')
-Hibernate: 
-    /* insert hr.ponge.pfa.model.TenantProperties
-        */ insert 
-        into
-            public.PFA_TENANT_PROPERTIES
-            (creation_date, last_change_date, id) 
-        values
-            (?, ?, ?)
-Hibernate: 
-    /* insert hr.ponge.pfa.model.Tenant
-        */ insert 
-        into
-            public.PFA_TENANT
-            (creation_date, last_change_date, tenant_name, tenant_properties_id, id) 
-        values
-            (?, ?, ?, ?, ?)
-3415 [main] TRACE hr.ponge.pfa.aop.LoggerAopImpl - TIME TO EXECUTE METHOD hr.ponge.pfa.service.env.tenant.TenantBLImpl.saveEntity  TIME:52 
-3415 [main] TRACE hr.ponge.pfa.aop.LoggerAopImpl - EXIT hr.ponge.pfa.service.env.tenant.TenantBLImpl.saveEntity  RETURN VALUE(Tenant [id=1000, name=PERICA]) 
-3416 [main] TRACE hr.ponge.pfa.aop.LoggerAopImpl - ENTRY hr.ponge.pfa.service.env.tenant.TenantBLImpl.saveEntity 
-3416 [main] TRACE hr.ponge.pfa.aop.LoggerAopImpl - ENTRY ARG:Tenant [id=1000, name=N] 
-Hibernate: 
-    /* load hr.ponge.pfa.model.Tenant */ select
-        tenant0_.id as id1_4_1_,
-        tenant0_.creation_date as creation2_4_1_,
-        tenant0_.last_change_date as last_cha3_4_1_,
-        tenant0_.tenant_name as tenant_n4_4_1_,
-        tenant0_.tenant_properties_id as tenant_p5_4_1_,
-        tenantprop1_.id as id1_5_0_,
-        tenantprop1_.creation_date as creation2_5_0_,
-        tenantprop1_.last_change_date as last_cha3_5_0_ 
-    from
-        public.PFA_TENANT tenant0_ 
-    left outer join
-        public.PFA_TENANT_PROPERTIES tenantprop1_ 
-            on tenant0_.tenant_properties_id=tenantprop1_.id 
-    where
-        tenant0_.id=?
-Hibernate: 
-    /* load hr.ponge.pfa.model.Tenant */ select
-        tenant0_.id as id1_4_1_,
-        tenant0_.creation_date as creation2_4_1_,
-        tenant0_.last_change_date as last_cha3_4_1_,
-        tenant0_.tenant_name as tenant_n4_4_1_,
-        tenant0_.tenant_properties_id as tenant_p5_4_1_,
-        tenantprop1_.id as id1_5_0_,
-        tenantprop1_.creation_date as creation2_5_0_,
-        tenantprop1_.last_change_date as last_cha3_5_0_ 
-    from
-        public.PFA_TENANT tenant0_ 
-    left outer join
-        public.PFA_TENANT_PROPERTIES tenantprop1_ 
-            on tenant0_.tenant_properties_id=tenantprop1_.id 
-    where
-        tenant0_.tenant_properties_id=?
-Hibernate: 
-    /* update
-        hr.ponge.pfa.model.Tenant */ update
-            public.PFA_TENANT 
-        set
-            last_change_date=?,
-            tenant_name=?,
-            tenant_properties_id=? 
-        where
-            id=?
-Hibernate: 
-    /* Select
-        t.id 
-    from
-        Tenant t 
-    where
-        t.name=:name 
-        and t.id<>:id  */ select
-            tenant0_.id as col_0_0_ 
-        from
-            public.PFA_TENANT tenant0_ 
-        where
-            tenant0_.tenant_name=? 
-            and tenant0_.id<>?
-3431 [main] INFO  org.junit.Test - fieldMinChars 
+Hibernate: BEGIN; 	ALTER SEQUENCE pfa_doc_template_sequence RESTART WITH 1000;
+	ALTER SEQUENCE pfa_document_sequence RESTART WITH 1000;
+	ALTER SEQUENCE pfa_picture_sequence RESTART WITH 1000;
+	ALTER SEQUENCE pfa_tenant_prop_sequence RESTART WITH 1000;
+	ALTER SEQUENCE pfa_tenant_sequence RESTART WITH 1000;
+	ALTER SEQUENCE pfa_user_sequence RESTART WITH 1000;
+	TRUNCATE TABLE pfa_tenant CASCADE;
+	TRUNCATE TABLE pfa_tenant_properties CASCADE;
+	TRUNCATE TABLE pfa_document CASCADE;
+	TRUNCATE TABLE pfa_document_template CASCADE;
+	TRUNCATE TABLE pfa_picture CASCADE;
+	TRUNCATE TABLE pfa_template_picture CASCADE;
+	TRUNCATE TABLE pfa_user CASCADE;
+	TRUNCATE TABLE pfa_user_properties CASCADE;
+		
+	INSERT INTO pfa_tenant_properties(id,creation_date,last_change_date)  VALUES (1,current_timestamp,current_timestamp);
+	INSERT INTO pfa_tenant (id,creation_date,last_change_date,tenant_name,tenant_properties_id) VALUES  (1,current_timestamp,current_timestamp,'PONGE', 1);
+	INSERT INTO pfa_user_properties (id,creation_date,last_change_date) VALUES (1,current_timestamp,current_timestamp);
+	INSERT INTO pfa_user_properties (id,creation_date,last_change_date) VALUES (2,current_timestamp,current_timestamp);
+			
+		
+	INSERT INTO pfa_user (id , creation_date ,last_change_date , address , date_of_birth ,last_access_time, username, users_password,surname , users_name,tenant_id,user_properties) 
+		VALUES  (1,current_timestamp,current_timestamp,'Sjenjak 5, 31000 Osijek','1979-01-01',current_timestamp,'test','test','Samardžić','Krunoslav',1 , 1);
+	INSERT INTO pfa_user (id , creation_date ,last_change_date , address , date_of_birth ,last_access_time, username, users_password,surname , users_name,tenant_id,user_properties) 
+		VALUES  (2,current_timestamp,current_timestamp,'Sjenjak 131, 31000 Osijek','1976-09-28',current_timestamp,'test1','test1','Samardžić','Damir',1 , 2);END;
+3616 [main] TRACE hr.ponge.pfa.aop.LoggerAopImpl aroundAdvice 60 - TIME TO EXECUTE METHOD hr.ponge.pfa.service.util.DbUtilImpl.executeSqlScript  TIME:283 
+3616 [main] TRACE hr.ponge.pfa.aop.LoggerAopImpl aroundAdvice 62 - EXIT hr.ponge.pfa.service.util.DbUtilImpl.executeSqlScript  RETURN VALUE(0) 
+3616 [main] INFO  org.junit.Test setUpBeforeClass 45 - EXECUTE BRINGUP RESULT 0 
+3624 [main] TRACE hr.ponge.pfa.aop.LoggerAopImpl aroundAdvice 50 - ENTRY hr.ponge.pfa.service.env.tenant.TenantBLImpl.registerMessageListener 
+3624 [main] TRACE hr.ponge.pfa.aop.LoggerAopImpl aroundAdvice 52 - ENTRY ARG:hr.ponge.pfa.service.env.tenant.TenantServiceTest@f2dc505 
+3625 [main] TRACE hr.ponge.pfa.aop.LoggerAopImpl aroundAdvice 60 - TIME TO EXECUTE METHOD hr.ponge.pfa.service.env.tenant.TenantBLImpl.registerMessageListener  TIME:1 
+3625 [main] TRACE hr.ponge.pfa.aop.LoggerAopImpl aroundAdvice 65 - EXIT hr.ponge.pfa.service.env.tenant.TenantBLImpl.registerMessageListener 
+3626 [main] TRACE hr.ponge.pfa.aop.LoggerAopImpl aroundAdvice 50 - ENTRY hr.ponge.pfa.service.env.tenant.TenantBLImpl.createEntity 
+3626 [main] TRACE hr.ponge.pfa.aop.LoggerAopImpl aroundAdvice 60 - TIME TO EXECUTE METHOD hr.ponge.pfa.service.env.tenant.TenantBLImpl.createEntity  TIME:0 
+3626 [main] TRACE hr.ponge.pfa.aop.LoggerAopImpl aroundAdvice 62 - EXIT hr.ponge.pfa.service.env.tenant.TenantBLImpl.createEntity  RETURN VALUE(Tenant [id=0, name=]) 
+3629 [main] TRACE hr.ponge.pfa.aop.LoggerAopImpl aroundAdvice 50 - ENTRY hr.ponge.pfa.service.env.tenant.TenantBLImpl.registerMessageListener 
+3630 [main] TRACE hr.ponge.pfa.aop.LoggerAopImpl aroundAdvice 52 - ENTRY ARG:hr.ponge.pfa.service.env.tenant.TenantServiceTest@2d82bda8 
+3630 [main] TRACE hr.ponge.pfa.aop.LoggerAopImpl aroundAdvice 60 - TIME TO EXECUTE METHOD hr.ponge.pfa.service.env.tenant.TenantBLImpl.registerMessageListener  TIME:1 
+3630 [main] TRACE hr.ponge.pfa.aop.LoggerAopImpl aroundAdvice 65 - EXIT hr.ponge.pfa.service.env.tenant.TenantBLImpl.registerMessageListener 
+3632 [main] TRACE hr.ponge.pfa.aop.LoggerAopImpl aroundAdvice 50 - ENTRY hr.ponge.pfa.service.env.tenant.TenantBLImpl.readEntity 
+3632 [main] TRACE hr.ponge.pfa.aop.LoggerAopImpl aroundAdvice 52 - ENTRY ARG:hr.ponge.pfa.service.env.tenant.TenantFilterOptions@627177ef 
+Hibernate: select distinct tenant0_.id as id1_4_, tenant0_.creation_date as creation2_4_, tenant0_.last_change_date as last_cha3_4_, tenant0_.tenant_name as tenant_n4_4_, tenant0_.tenant_properties_id as tenant_p5_4_ from public.PFA_TENANT tenant0_ where tenant0_.id<>0
+3779 [main] TRACE hr.ponge.pfa.aop.LoggerAopImpl aroundAdvice 60 - TIME TO EXECUTE METHOD hr.ponge.pfa.service.env.tenant.TenantBLImpl.readEntity  TIME:147 
+3779 [main] TRACE hr.ponge.pfa.aop.LoggerAopImpl aroundAdvice 62 - EXIT hr.ponge.pfa.service.env.tenant.TenantBLImpl.readEntity  RETURN VALUE([Tenant [id=1, name=PONGE]]) 
+3781 [main] TRACE hr.ponge.pfa.aop.LoggerAopImpl aroundAdvice 50 - ENTRY hr.ponge.pfa.service.env.tenant.TenantBLImpl.registerMessageListener 
+3782 [main] TRACE hr.ponge.pfa.aop.LoggerAopImpl aroundAdvice 52 - ENTRY ARG:hr.ponge.pfa.service.env.tenant.TenantServiceTest@6ee28500 
+3784 [main] TRACE hr.ponge.pfa.aop.LoggerAopImpl aroundAdvice 60 - TIME TO EXECUTE METHOD hr.ponge.pfa.service.env.tenant.TenantBLImpl.registerMessageListener  TIME:3 
+3784 [main] TRACE hr.ponge.pfa.aop.LoggerAopImpl aroundAdvice 65 - EXIT hr.ponge.pfa.service.env.tenant.TenantBLImpl.registerMessageListener 
+3785 [main] TRACE hr.ponge.pfa.aop.LoggerAopImpl aroundAdvice 50 - ENTRY hr.ponge.pfa.service.env.tenant.TenantBLImpl.createEntity 
+3787 [main] TRACE hr.ponge.pfa.aop.LoggerAopImpl aroundAdvice 60 - TIME TO EXECUTE METHOD hr.ponge.pfa.service.env.tenant.TenantBLImpl.createEntity  TIME:2 
+3787 [main] TRACE hr.ponge.pfa.aop.LoggerAopImpl aroundAdvice 62 - EXIT hr.ponge.pfa.service.env.tenant.TenantBLImpl.createEntity  RETURN VALUE(Tenant [id=0, name=]) 
+3791 [main] TRACE hr.ponge.pfa.aop.LoggerAopImpl aroundAdvice 50 - ENTRY hr.ponge.pfa.service.env.tenant.TenantBLImpl.saveEntity 
+3792 [main] TRACE hr.ponge.pfa.aop.LoggerAopImpl aroundAdvice 52 - ENTRY ARG:Tenant [id=0, name=PERICA] 
+Hibernate: select tenant0_.id as col_0_0_ from public.PFA_TENANT tenant0_ where tenant0_.tenant_name=? and tenant0_.id<>?
+Hibernate: select nextval ('public.PFA_TENANT_SEQUENCE')
+Hibernate: select nextval ('public.PFA_TENANT_PROP_SEQUENCE')
+Hibernate: insert into public.PFA_TENANT_PROPERTIES (creation_date, last_change_date, id) values (?, ?, ?)
+Hibernate: insert into public.PFA_TENANT (creation_date, last_change_date, tenant_name, tenant_properties_id, id) values (?, ?, ?, ?, ?)
+3834 [main] TRACE hr.ponge.pfa.aop.LoggerAopImpl aroundAdvice 60 - TIME TO EXECUTE METHOD hr.ponge.pfa.service.env.tenant.TenantBLImpl.saveEntity  TIME:43 
+3835 [main] TRACE hr.ponge.pfa.aop.LoggerAopImpl aroundAdvice 62 - EXIT hr.ponge.pfa.service.env.tenant.TenantBLImpl.saveEntity  RETURN VALUE(Tenant [id=1000, name=PERICA]) 
+3835 [main] TRACE hr.ponge.pfa.aop.LoggerAopImpl aroundAdvice 50 - ENTRY hr.ponge.pfa.service.env.tenant.TenantBLImpl.saveEntity 
+3835 [main] TRACE hr.ponge.pfa.aop.LoggerAopImpl aroundAdvice 52 - ENTRY ARG:Tenant [id=1000, name=N] 
+Hibernate: select tenant0_.id as id1_4_0_, tenant0_.creation_date as creation2_4_0_, tenant0_.last_change_date as last_cha3_4_0_, tenant0_.tenant_name as tenant_n4_4_0_, tenant0_.tenant_properties_id as tenant_p5_4_0_ from public.PFA_TENANT tenant0_ where tenant0_.id=?
+Hibernate: select tenantprop0_.id as id1_5_0_, tenantprop0_.creation_date as creation2_5_0_, tenantprop0_.last_change_date as last_cha3_5_0_ from public.PFA_TENANT_PROPERTIES tenantprop0_ where tenantprop0_.id=?
+Hibernate: select tenant0_.id as id1_4_0_, tenant0_.creation_date as creation2_4_0_, tenant0_.last_change_date as last_cha3_4_0_, tenant0_.tenant_name as tenant_n4_4_0_, tenant0_.tenant_properties_id as tenant_p5_4_0_ from public.PFA_TENANT tenant0_ where tenant0_.tenant_properties_id=?
+Hibernate: update public.PFA_TENANT set last_change_date=?, tenant_name=?, tenant_properties_id=? where id=?
+Hibernate: select tenant0_.id as col_0_0_ from public.PFA_TENANT tenant0_ where tenant0_.tenant_name=? and tenant0_.id<>?
+Hibernate: update public.PFA_TENANT set last_change_date=?, tenant_name=?, tenant_properties_id=? where id=?
+3853 [main] TRACE hr.ponge.pfa.aop.LoggerAopImpl aroundAdvice 60 - TIME TO EXECUTE METHOD hr.ponge.pfa.service.env.tenant.TenantBLImpl.saveEntity  TIME:18 
+3853 [main] TRACE hr.ponge.pfa.aop.LoggerAopImpl aroundAdvice 62 - EXIT hr.ponge.pfa.service.env.tenant.TenantBLImpl.saveEntity  RETURN VALUE(Tenant [id=1000, name=N]) 
 ]]></system-out>
-  <system-err><![CDATA[Jun 5, 2014 3:59:25 PM org.springframework.context.support.ClassPathXmlApplicationContext prepareRefresh
-INFO: Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@68a53de4: startup date [Thu Jun 05 15:59:25 CEST 2014]; root of context hierarchy
-Jun 5, 2014 3:59:25 PM org.springframework.beans.factory.xml.XmlBeanDefinitionReader loadBeanDefinitions
+  <system-err><![CDATA[Oct 14, 2014 4:58:51 PM org.springframework.context.support.ClassPathXmlApplicationContext prepareRefresh
+INFO: Refreshing org.springframework.context.support.ClassPathXmlApplicationContext@5d5453d8: startup date [Tue Oct 14 16:58:51 CEST 2014]; root of context hierarchy
+Oct 14, 2014 4:58:51 PM org.springframework.beans.factory.xml.XmlBeanDefinitionReader loadBeanDefinitions
 INFO: Loading XML bean definitions from class path resource [spring/application-context.xml]
-Jun 5, 2014 3:59:25 PM org.springframework.beans.factory.xml.XmlBeanDefinitionReader loadBeanDefinitions
+Oct 14, 2014 4:58:51 PM org.springframework.beans.factory.xml.XmlBeanDefinitionReader loadBeanDefinitions
 INFO: Loading XML bean definitions from class path resource [spring/aop.xml]
-Jun 5, 2014 3:59:25 PM org.springframework.beans.factory.xml.XmlBeanDefinitionReader loadBeanDefinitions
+Oct 14, 2014 4:58:52 PM org.springframework.beans.factory.xml.XmlBeanDefinitionReader loadBeanDefinitions
 INFO: Loading XML bean definitions from class path resource [spring/dataSource.xml]
-Jun 5, 2014 3:59:25 PM org.springframework.beans.factory.xml.XmlBeanDefinitionReader loadBeanDefinitions
+Oct 14, 2014 4:58:52 PM org.springframework.beans.factory.xml.XmlBeanDefinitionReader loadBeanDefinitions
 INFO: Loading XML bean definitions from class path resource [spring/tenant.xml]
-Jun 5, 2014 3:59:25 PM org.springframework.beans.factory.xml.XmlBeanDefinitionReader loadBeanDefinitions
+Oct 14, 2014 4:58:52 PM org.springframework.beans.factory.xml.XmlBeanDefinitionReader loadBeanDefinitions
 INFO: Loading XML bean definitions from class path resource [spring/common-beans.xml]
-Jun 5, 2014 3:59:27 PM org.springframework.orm.hibernate4.HibernateTransactionManager afterPropertiesSet
-INFO: Using DataSource [org.apache.commons.dbcp.BasicDataSource@7dcb3cd] of Hibernate SessionFactory for HibernateTransactionManager
+Oct 14, 2014 4:58:54 PM org.springframework.orm.hibernate4.HibernateTransactionManager afterPropertiesSet
+INFO: Using DataSource [org.apache.commons.dbcp.BasicDataSource@7a456c2b] of Hibernate SessionFactory for HibernateTransactionManager
 ]]></system-err>
 </testsuite>

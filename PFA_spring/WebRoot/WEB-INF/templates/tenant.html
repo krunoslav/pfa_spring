@@ -1,0 +1,139 @@
+<!DOCTYPE html SYSTEM "http://www.thymeleaf.org/dtd/xhtml1-strict-thymeleaf-spring4-4.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:th="http://www.thymeleaf.org">
+
+<head>
+<title>Good Thymes Virtual Grocery</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="stylesheet" type="text/css" media="all"
+	href="../../css/theme.css" th:href="@{/css/theme.css}" />
+<link rel="stylesheet" type="text/css" media="all"
+	href="../../css/style.css" th:href="@{/css/style.css}" />
+
+</head>
+
+<body>
+	<div id="container">
+		<div id="header">
+			<h2 th:text="#{pfaApplication}">PFA application</h2>
+			<div id="topmenu">
+				<ul>
+					<li class="current"><a th:text="#{tenants}"
+						th:href="@{/tenant}" href="#">Tenants</a></li>
+					<li><a th:text="#{users}" th:href="@{/users}" href="#">Users</a></li>
+					<li><a th:text="#{documentTemplates}"
+						th:href="@{/document_templates}" href="#">Document templates</a></li>
+					<li><a th:text="#{pictureTemplates}"
+						th:href="@{/picture_templates}" href="#">Picture templates</a></li>
+
+				</ul>
+			</div>
+		</div>
+		<div id="top-panel"></div>
+
+		<div id="wrapper">
+
+			<div id="content">
+				<form id="form_tenant" th:object="${mod}" method="post"
+					th:action="@{/tenant}" action="#">
+					<div id="actions">
+						<div id="box">
+							<h3 th:text="#{filter}">Filter</h3>
+						</div>
+						<div id="filter">
+							<span> <output for="f_name" th:text="#{name}">name</output>
+								<input id="f_name" type="text" size="10"
+								th:field="*{filterOptions.name}" />
+							</span> <span> <output for="f_id" th:text="#{id}">Id</output> <input
+								id="f_id" type="text" size="10" th:field="*{filterOptions.id}" />
+							</span> <span> <input id="filterTenants" class="buttons"
+								th:value="#{filter}" name="filter" type="submit" value="Filter"
+								form="form_tenant" />
+
+							</span>
+
+						</div>
+						<div id="messages">
+
+							<ul th:if="${#fields.hasErrors('*')}" class="errorlist">
+								<li th:each="err : ${#fields.errors('*')}" th:text="${err}">Input
+									is incorrect</li>
+							</ul>
+							<ul th:if="*{hasWarnMessages()}" class="warnlist">
+								<li th:each="err : *{warnMessages}" th:text="#{${err.messageKey}}">Input
+									is incorrect</li>
+							</ul>
+							<ul th:if="*{hasInfoMessages()}" class="infolist">
+								<li th:each="err : *{infoMessages}" th:text="#{${err.messageKey}}">Input
+									is incorrect</li>
+							</ul>
+
+						</div>
+
+						<input id="newTenant" class="buttons" th:value="#{newTenant}"
+							name="new" type="submit" value="New Tenant" form="form_tenant"
+							th:formaction="@{/tenant}" />
+
+
+
+					</div>
+					<div id="searchResults">
+						<div id="box">
+							<h3 th:text="#{tenants}">Tenants</h3>
+							<table width="100%">
+								<thead>
+									<tr>
+										<th th:text="#{id}" width="10%">Id</th>
+										<th th:text="#{name}" width="80%">Name</th>
+										<th th:text="#{action}" width="10%">Action</th>
+
+									</tr>
+								</thead>
+								<tbody>
+									<tr th:each="row,rowStat : *{tenantList}">
+										<td th:text="${row.id}">1000</td>
+										<td th:text="${row.name}">Ponge</td>
+										<!-- 										<td> <input type="text" th:field="*{tenantList[__${rowStat.index}__].name}" /> </td> -->
+										<td>edit</td>
+									</tr>
+
+								</tbody>
+							</table>
+						</div>
+
+					</div>
+
+					<div id="details" th:if="*{tenant !=null}">
+						<div id="box">
+							<h3 th:text="#{details}">Details</h3>
+						</div>
+						<div>
+							<span> <output for="d_name" th:text="#{name}">name</output>
+								<input id="f_name" type="text" size="10"
+								th:field="*{tenant.name}" />
+							</span> <span> <input id="filterTenants" class="buttons"
+								th:value="#{save}" name="save" type="submit" value="Save"
+								form="form_tenant" />
+
+							</span>
+
+						</div>
+					</div>
+				</form>
+			</div>
+
+
+		</div>
+
+		<div id="footer">
+			<div id="credits">
+				Template by <a href="http://www.bloganje.com">Bloganje</a>
+			</div>
+
+
+		</div>
+	</div>
+</body>
+
+</html>

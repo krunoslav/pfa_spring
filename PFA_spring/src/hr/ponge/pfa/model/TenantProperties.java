@@ -1,6 +1,7 @@
 package hr.ponge.pfa.model;
 
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
@@ -8,6 +9,7 @@ import javax.persistence.JoinColumn;
 import javax.persistence.OneToOne;
 import javax.persistence.SequenceGenerator;
 import javax.persistence.Table;
+import javax.persistence.Transient;
 
 @SequenceGenerator(name = "TENANT_PROP_SEQ", sequenceName = "PFA_TENANT_PROP_SEQUENCE", allocationSize = 1, initialValue=1000)
 @Entity
@@ -37,7 +39,7 @@ public class TenantProperties extends EntityPfa {
 	
 	private Tenant tenant;
 
-	@OneToOne(mappedBy="tenantProperties")
+	@OneToOne(mappedBy="tenantProperties",fetch=FetchType.LAZY)
 	public Tenant getTenant() {
 		return tenant;
 	}

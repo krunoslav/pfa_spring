@@ -5,11 +5,11 @@ public class EntityFilterOptions {
 
 	private Long id;
 
-	public long getId() {
+	public Long getId() {
 		return id;
 	}
 
-	public void setId(long param) {
+	public void setId(Long param) {
 		this.id = param;
 
 	}

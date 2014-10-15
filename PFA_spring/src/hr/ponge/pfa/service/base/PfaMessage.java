@@ -17,6 +17,14 @@ public class PfaMessage {
 		this.messageType=messageType;
 	}
 	
+	
+	public PfaMessage(int messageType,String messageKey){
+		this(messageType);
+		setMessageKey(messageKey);
+	}
+	
+	
+
 	private int messageType=0;
 	
 

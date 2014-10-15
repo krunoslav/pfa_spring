@@ -20,7 +20,13 @@ public abstract class ServiceBase implements Service {
 		this.messageListener = listener;
 	}
 
-	protected List<PfaMessage> messages = new ArrayList<PfaMessage>();
+	protected ThreadLocal<List<PfaMessage>>messages=new ThreadLocal<List<PfaMessage>>(){
+		@Override
+		protected List<PfaMessage> initialValue() {
+			return new ArrayList<PfaMessage>();
+		}
+	};
+	
 	private SessionFactory sessionFactory;
 
 	public SessionFactory getSessionFactory() {
@@ -71,7 +77,7 @@ public abstract class ServiceBase implements Service {
 
 	@Transactional(propagation = Propagation.SUPPORTS)
 	public void sendMessage(PfaMessage message) {
-		messages.add(message);
+		messages.get().add(message);
 		if (messageListener != null) {
 			messageListener.messageCallback(message);
 		}

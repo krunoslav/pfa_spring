@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="tests">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/PFA_spring/lib/tests/hamcrest-core-1.3.jar!/" />
+      <root url="jar://$PROJECT_DIR$/PFA_spring/lib/tests/junit-4.11.jar!/" />
+      <root url="jar://$PROJECT_DIR$/PFA_spring/lib/tests/ant-junit-1.9.4.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

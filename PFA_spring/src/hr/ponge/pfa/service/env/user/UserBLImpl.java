@@ -201,7 +201,7 @@ public class UserBLImpl extends CrudBussinesLogic<User, UserFilterOptions>
 
 		}
 
-		if (messages.size() > 0) {
+		if (messages.get().size() > 0) {
 			return;
 		}
 

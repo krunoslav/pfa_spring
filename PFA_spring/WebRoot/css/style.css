@@ -36,18 +36,39 @@ select{
 	width:960px;
 	margin-left:auto;
 	margin-right:auto;
+	
 }
 #header{
 	width:960px;
+	
 }
 #header h2{
 margin-top:20px;
 }
 #content{
-	width:740px;
+	width:960px;
 	float:left;
 	margin:10px 0 10px 0;
-	padding:10px;
+	
+}
+#filter{
+	padding:5px;
+	margin:20px 20px 20px 20px;
+	
+}
+#filter span{
+	padding-right: 20px;
+	padding-top:10px;
+	white-space: nowrap;
+}
+
+#messages{
+	padding:5px;
+	margin:20px 20px 20px 20px;
+}
+#messages ul{
+	padding-right: 20px;
+	white-space: nowrap;
 }
 #sidebar{
 	background:#FFF;
@@ -58,6 +79,7 @@ margin-top:20px;
 }
 #footer{
 	clear:both;
+	
 	padding:5px;
 	margin-top:10px;
 }
@@ -281,64 +303,6 @@ thead{
 }
 #rightnow a {
 	font-weight: bold;
-}
-/*********************
-		Forms
-*********************/
-form{
-	padding:10px;
-	margin:0 auto;
-}
-form#form fieldset {
-	display:block;
-	padding:5px 10px 5px 10px;
-	line-height:20px;
-	margin-bottom:10px;
-}
-form#form legend {
-	font-size:12px;
-	font-weight:bold;
-	margin-bottom:5px;
-	padding:3px;
-	width:254px;
-}
-form#form label {
-	clear:left;
-	display:block;
-	float:left;
-	width:100px;
-	text-align:right;
-	padding-right:10px;
-	margin-bottom:5px;
-}
-form#form input {
-	padding:3px;
-	margin-bottom:5px;
-}
-form#form select {
-	margin-left:5px;
-}
-form#form textarea {
-	width:410px;
-	height:200px;
-	padding:5px;
-	overflow:auto;
-}
-form#form option {
-	background:#FFF;
-}
-form#form optgroup option {
-
-}
-form#form #button1, form#form #button2 {
-	padding-right:5px;
-	cursor:pointer;
-	width:205px;
-	margin-left:8px;
-	font-weight:bold;
-}
-form#form #button1:hover, form#form #button2:hover {
-	background-position:center left;
 }
 
 /*********************

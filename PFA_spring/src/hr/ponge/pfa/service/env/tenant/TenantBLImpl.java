@@ -3,6 +3,7 @@ package hr.ponge.pfa.service.env.tenant;
 import hr.ponge.pfa.PfaException;
 import hr.ponge.pfa.model.Tenant;
 import hr.ponge.pfa.service.base.CrudBussinesLogic;
+import hr.ponge.pfa.service.base.PfaMessage;
 import hr.ponge.util.ParamSelect;
 
 import java.util.List;
@@ -42,36 +43,22 @@ public class TenantBLImpl extends
 	@Override
 	protected void validateEntity(int operation, Tenant tenant)
 			throws PfaException {
-		if (tenant.getName() != null) {
-			if (tenant.getName().length() < 3) {
-				createErrorAndSend(PfaException.REQUEST_VALIDATION_ERROR,
-						"fieldMinChars", new String[] { "name", "3" });
-
+	
+			if(tenant.getName().length()<5){
+				createAndSendMessage(PfaMessage.MESSAGE_TYPE_WARN,
+						PfaException.REQUEST_VALIDATION_ERROR, "tenantNameShouldBeMoreThan5Chars",  new String[] { tenant.getName() });
 			}
-			if (tenant.getName().length() > 250) {
-				createErrorAndSend(PfaException.REQUEST_VALIDATION_ERROR,
-						"fieldMaxChars", new String[] { "name", "250" });
-
-			}
-			if (operation == OPERATION_INSERT
-					&& nameExists(tenant.getName(), 0)) {
-				createErrorAndSend(PfaException.REQUEST_VALIDATION_ERROR,
-						"nameTaken", new String[] { tenant.getName() });
-
-			}
-			if (operation != OPERATION_INSERT
+		
+			
+			if ((operation == OPERATION_INSERT || operation==OPERATION_UPDATE)
 					&& nameExists(tenant.getName(), tenant.getId())) {
 				createErrorAndSend(PfaException.REQUEST_VALIDATION_ERROR,
-						"nameTaken", new String[] { tenant.getName() });
+						"tenantNameTaken", new String[] { tenant.getName() });
 
 			}
+			
 
-		} else {
-
-			createErrorAndSend(PfaException.REQUEST_VALIDATION_ERROR,
-					"fieldNotSpecified", new String[] { "name" });
-
-		}
+		
 
 	}
 
@@ -84,7 +71,7 @@ public class TenantBLImpl extends
 	@Override
 	protected List<Tenant> readEntityCallback(TenantFilterOptions filter) {
 		ParamSelect ps = new ParamSelect();
-		String sel = "Select t from Tenant t " + " where t.id != 0 ";
+		String sel = "Select distinct t from Tenant t " + " where t.id != 0 ";
 
 		if (filter.isIdSpecified()) {
 			sel = sel + " and t.id=:id ";
